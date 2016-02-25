@@ -1,0 +1,125 @@
+
+// Clearfix
+@mixin clearfix {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+// Font
+@mixin predefault {
+	line-height: 1.4375;
+	font-size: em-font($font-size-pre-default);
+}
+
+// Size
+@mixin size($width, $height: $width) {
+  	width: $width;
+  	height: $height;
+}
+
+// Center
+@mixin center {
+	transform: translate(-50%, -50%)
+}
+
+@mixin horizontal-center {
+	transform: translateX(-50%);
+}
+
+@mixin vertical-center {
+	transform: translateY(-50%);
+}
+
+//	Position
+@mixin position($position: absolute, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+	position: $position;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+// Absolute
+@mixin absolute($top: 0, $right: 0, $bottom: 0, $left: 0) {
+	position: absolute;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+// Counter 
+@mixin counter($item: item) {
+	content: counter($item)"";
+	counter-increment: $item;
+}
+
+// Arrows slider
+@mixin arrows($color) {
+	content: '';
+
+	@include absolute(50%, auto, auto, 50%);
+
+  display: block;
+  
+  @include size(12px);
+
+  margin-top: -6px;
+  border: 1px solid $color;
+  transform-origin: center center;
+	transform: rotate(45deg);
+	transition: border-color .3s ease;
+}
+
+@mixin arrows-base {
+	position: absolute;
+	top: 50%;
+	display: block;
+	font-size: 0;
+	transition: opacity .3s ease, background .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+// Header navigation
+@mixin header-nav {
+	content: '';
+	z-index: 10;
+	display: block;
+	opacity: 1;
+
+	@include size (1px, 15px);
+
+	margin-top: -7px;
+	background-color: #4c453e;
+	transition: opacity .3s ease;
+}
+
+// Responsive 
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @error "Не указано значение для '#{$breakpoint}'."
+        
+  }
+}
+
+// Retina 
+@mixin retina-bg($file, $type, $width, $height) {
+	background-image: url('../images/' + $file + '@1x.' + $type);
+	background-repeat: no-repeat;
+	
+	@media 
+		only screen and (-webkit-min-device-pixel-ratio:2),
+		only screen and (min--moz-device-pixel-ratio:2),
+		only screen and (-o-min-device-pixel-ratio:2/1),
+		only screen and (min-device-pixel-ratio:2),
+		only screen and (min-resolution: 2dppx) {
+			background-image: url('../images/' + $file + '@2x.' + $type);
+			background-size: $width $height;
+	}
+}
