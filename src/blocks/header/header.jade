@@ -1,0 +1,25 @@
++b(id='header')
+	h1 Навигация
+	+b('ul').navigation(id='navigation')
+		+nav-link([
+			{
+				href: '#home',
+				id: 'link-home',
+				link: 'О себе',
+			}, 
+			{
+				href: '#experience',
+				id: 'link-experience',
+				link: 'Опыт веб-разработки',
+			},
+			{
+				href: '#portfolio',
+				id: 'link-portfolio',
+				link: 'Портфолио',
+			},
+			{
+				href: '#shri',
+				id: 'link-shri',
+				link: 'Ожидания от ШРИ',
+			}
+		])
