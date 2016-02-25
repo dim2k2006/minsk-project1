@@ -1,7 +1,7 @@
 # SHRI 2016 project №1
 1. git clone git@github.com:dim2k2006/minsk-project1.git
 
-2. minsk-project1
+2. cd minsk-project1
 
 3. npm i && bower i
 
