@@ -28,6 +28,11 @@ html(lang="ru")
 
 	body
 
-		main
+		+b('main').container
+			+e('section').left
+				
+				block content
 
-			block content
+			+e('section').right
+
+				include ../blocks/header/header
