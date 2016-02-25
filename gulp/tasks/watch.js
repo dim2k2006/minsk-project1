@@ -3,17 +3,20 @@ import runSequence from 'run-sequence';
 import { reload }  from 'browser-sync';
 import watch       from 'gulp-watch';
 import settings    from '../settings';
+import error       from '../utils/errorHandler.js';
 
 gulp.task('watch', () => {
+    global.watch = true;
+    
     watch([`${settings.baseSrc}/{sass,blocks}/**/*.scss`], function(event, cb) {
         gulp.start('styles');
     });
 
-    watch([`${settings.baseSrc}/blocks/**/*.js`], function(event, cb) {
-        runSequence('scripts', reload)
+    watch(`${settings.baseSrc}/{pages,blocks}/**/*.jade`, () => {
+        runSequence('markup', reload);
     });
 
-    watch([`${settings.baseSrc}/{pages,jade,blocks}/**/*.jade`], function(event, cb) {
+    watch([`${settings.baseSrc}/{pages,blocks}/**/*.jade`], function(event, cb) {
     	runSequence('markup', reload)
   	});
 

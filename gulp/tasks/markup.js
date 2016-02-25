@@ -15,8 +15,9 @@ let data = {
 	timestamp: +new Date()
 };
 
-gulp.task('markup', () => (
-	gulp.src(`${settings.baseSrc}/pages/*.jade`)
+gulp.task('markup', () => {
+	return gulp
+		.src(`${settings.baseSrc}/**/*.jade`)
 		.pipe(plumber({errorHandler: errorHandler}))
 		.pipe(cached('jade'))
 		.pipe(gulpif(global.watch, inheritance({basedir: settings.baseSrc})))
@@ -30,5 +31,5 @@ gulp.task('markup', () => (
 			preserve_newlines: true
 		}))
 		.pipe(rename({dirname: '.'}))
-		.pipe(gulp.dest(settings.baseDist))
-));
+		.pipe(gulp.dest(settings.baseDist));
+});
