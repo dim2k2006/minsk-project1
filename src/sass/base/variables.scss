@@ -1,8 +1,6 @@
 // Font-family
 $font-family-default: 'PT Sans', Arial, Helvetica, sans-serif;
 
-
-
 // Font-size
 $font-size-extra-small: 8px;
 $font-size-small: 13px;
@@ -17,15 +15,11 @@ $font-size-pre-large: 30px;
 $font-size-large: 34px;
 $font-size-extra-large: 44px;
 
-
-
 // Color
 $color-primary: #1B1B1B;
 $color-light: #FFF;
 $color-gray: #ADB4BB;
 $color-light-gray: #F9F9F9;
-
-
 
 // Breakpoints 
 $breakpoints: (
@@ -36,4 +30,13 @@ $breakpoints: (
 	'increasead': (max-width: 1040px),
 	'huge': (max-width: 1260px),
 	'ultrahuge': (max-width: 1400px)
+);
+
+// Grid
+$susy: (
+  columns: 12,
+  container: 1200px,
+  gutters: 1/4,
+  global-box-sizing: border-box,
+  debug: (image: show)
 );

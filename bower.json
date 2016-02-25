@@ -2,6 +2,7 @@
   "name": "shri-2016-project-1",
   "version": "0.1.0",
   "dependencies": {
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "susy": "git@github.com:oddbird/susy.git#^2.2.12"
   }
 }

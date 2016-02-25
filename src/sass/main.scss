@@ -4,7 +4,8 @@
 @import 'base/fonts.scss';
 @import 'base/mixins.scss';
 
-
+/* GRID */
+@import '../bower_components/susy/sass/susy';
 
 /* BLOCKS */
 @import 'blocks.scss';
