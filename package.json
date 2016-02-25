@@ -57,10 +57,10 @@
     "safari": 7
   },
   "browser": {
-    "jquery": "./src/bower_components/jquery/jquery.min.js"
+    
   },
   "browserify-shim": {
-    "jquery": "$"
+    
   },
   "browserify": {
     "transform": [
@@ -69,7 +69,6 @@
   },
   "vendorStyles": {
     "path": [
-      "./src/bower_components/tooltipster/css/tooltipster.css",
       "./src/bower_components/normalize.css/normalize.css"
     ]
   }
