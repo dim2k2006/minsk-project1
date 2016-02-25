@@ -1,0 +1,9 @@
+{
+  "name": "jade-project",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "1.9.1",
+    "normalize.css": "~3.0.3",
+    "tooltipster": "~3.3.0"
+  }
+}

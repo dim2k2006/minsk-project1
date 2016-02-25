@@ -1,0 +1,39 @@
+// Font-family
+$font-family-default: 'PT Sans', Arial, Helvetica, sans-serif;
+
+
+
+// Font-size
+$font-size-extra-small: 8px;
+$font-size-small: 13px;
+$font-size-pre-small: 14px;
+$font-size-pre-default: 15px;
+$font-size-default: 16px;
+$font-size-default-large: 18px;
+$font-size-pre-medium: 20px;
+$font-size-medium: 26px;
+$font-size-medium-large: 28px;
+$font-size-pre-large: 30px;
+$font-size-large: 34px;
+$font-size-extra-large: 44px;
+
+
+
+// Color
+$color-primary: #1B1B1B;
+$color-light: #FFF;
+$color-gray: #ADB4BB;
+$color-light-gray: #F9F9F9;
+
+
+
+// Breakpoints 
+$breakpoints: (
+	'small' : (max-width: 480px),
+	'medium': (max-width: 640px),
+	'big': (max-width: 800px),
+	'intermediary': (max-width: 960px),
+	'increasead': (max-width: 1040px),
+	'huge': (max-width: 1260px),
+	'ultrahuge': (max-width: 1400px)
+);
