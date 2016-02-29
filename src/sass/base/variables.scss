@@ -1,24 +1,30 @@
 // Font-family
-$font-family-default: 'PT Sans', Arial, Helvetica, sans-serif;
+$font-family-default: 'Roboto', Arial, Helvetica, sans-serif;
 
 // Font-size
-$font-size-extra-small: 8px;
-$font-size-small: 13px;
-$font-size-pre-small: 14px;
-$font-size-pre-default: 15px;
+// $font-size-extra-small: 8px;
+$font-size-small: 14px;
+// $font-size-pre-small: 14px;
+// $font-size-pre-default: 15px;
 $font-size-default: 16px;
-$font-size-default-large: 18px;
-$font-size-pre-medium: 20px;
-$font-size-medium: 26px;
-$font-size-medium-large: 28px;
-$font-size-pre-large: 30px;
-$font-size-large: 34px;
-$font-size-extra-large: 44px;
+// $font-size-default-large: 18px;
+// $font-size-pre-medium: 20px;
+$font-size-medium: 20px;
+// $font-size-medium-large: 28px;
+// $font-size-pre-large: 30px;
+$font-size-large: 36px;
+// $font-size-extra-large: 44px;
 
 // Color
-$color-primary: #1B1B1B;
+$color-primary: #575757;
+$color-secondary: #565656;
+$color-gray: #333333;
+$color-brown: #BB9977;
+
+
+
 $color-light: #FFF;
-$color-gray: #ADB4BB;
+
 $color-light-gray: #F9F9F9;
 $color-yellow: #FFCC00;
 
