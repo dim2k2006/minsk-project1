@@ -1,4 +1,4 @@
 mixin nav-link(links)
 	each item in links
 		+e('li').item
-			+e('a').link(href= item.href, id= item.id)= item.link
+			+e('a').link(href= item.href, id= item.id, data-text= item.link)

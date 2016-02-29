@@ -3,7 +3,12 @@
 
 	position: relative;
 	height: 100%;
-	padding-left: 280px;
+	padding-right: 345px;
+
+	&__input {
+		position: absolute;
+		left: -999px;
+	}
 
 	&__left {
 		position: relative;
@@ -13,9 +18,16 @@
 	&__right {
 		position: absolute;
 		display: block;
-		width: 230px;
+		width: 62px;
 		top: 0;
-		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #414141;
+		transition: width 400ms;
+	}
+
+	&__input:checked ~ &__right {
+		width: 290px;
 	}
 
 	&:after {

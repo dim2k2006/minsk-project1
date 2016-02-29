@@ -1,25 +1,33 @@
 +b(id='header')
-	h1 Навигация
-	+b('ul').navigation(id='navigation')
-		+nav-link([
-			{
-				href: '#home',
-				id: 'link-home',
-				link: 'О себе',
-			}, 
-			{
-				href: '#experience',
-				id: 'link-experience',
-				link: 'Опыт веб-разработки',
-			},
-			{
-				href: '#portfolio',
-				id: 'link-portfolio',
-				link: 'Портфолио',
-			},
-			{
-				href: '#shri',
-				id: 'link-shri',
-				link: 'Ожидания от ШРИ',
-			}
-		])
+
+	+b('label').burger(for='burger')
+		+e('div').state._default
+			+e('i').border
+		+e('div').state._active
+			+e('i').border
+
+	+b('div').navigationWrapper
+
+		+b('ul').navigation(id='navigation')
+			+nav-link([
+				{
+					href: '#home',
+					id: 'link-home',
+					link: 'О себе',
+				}, 
+				{
+					href: '#experience',
+					id: 'link-experience',
+					link: 'Опыт веб-разработки',
+				},
+				{
+					href: '#portfolio',
+					id: 'link-portfolio',
+					link: 'Портфолио',
+				},
+				{
+					href: '#shri',
+					id: 'link-shri',
+					link: 'Ожидания от ШРИ',
+				}
+			])
