@@ -12,7 +12,7 @@ gulp.task('watch', () => {
         gulp.start('styles');
     });
 
-    watch(`${settings.baseSrc}/{pages,blocks}/**/*.jade`, () => {
+    watch(`${settings.baseSrc}/{pages,blocks,jade}/**/*.jade`, () => {
         runSequence('markup', reload);
     });
 
