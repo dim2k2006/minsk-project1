@@ -13,10 +13,4 @@
 	&__input:checked ~ .header {
 		width: 290px;
 	}
-
-	&:after {
-		content: '';
-		display: table;
-		width: 100%;
-	}
 }

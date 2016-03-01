@@ -16,18 +16,23 @@ body {
 	font-family: $font-family-default;
 	font-size: $font-size-default;
 	line-height: 1.4;
+	color: $color-primary;
 	background: $color-white;
 	overflow: hidden;
 }
 
 h1 {
+	margin: 1.2em 0;
 	font-weight: 400;
 	font-size: $font-size-large;
 	line-height: $font-size-large;
+	color: $color-gray;
+	text-transform: uppercase;
 }
 
 h3 {
 	font-weight: 400;
 	font-size: $font-size-medium;
 	line-height: $font-size-medium;
+	color: $color-secondary;
 }

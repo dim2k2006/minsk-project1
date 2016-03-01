@@ -1,3 +1,41 @@
-.content h2 {
-	margin-top: 0;
+.content {
+	position: relative;
+	height: 100%;
+
+	&__col {
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	&__col + &__col {
+		left: 50%;
+		padding-top: 50px;
+    	padding-left: 66px;
+    	padding-right: 66px;
+		overflow-y: scroll;
+	}
+
+	&__col_left {
+		background-color: #FFF;
+	}
+
+	&__col_left:after {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 3px;
+		height: 100%;
+		top: 0;
+		right: 0;
+		background-color: #bb9977;
+	}
+
+	&:after {
+		content: '';
+		display: table;
+		width: 100%;
+	}
 }
