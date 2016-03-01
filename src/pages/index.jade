@@ -6,21 +6,11 @@ block head
 	- var pageTitle="Главная";
 
 block content
-	+b.content(id='home')
-		h2 О себе
-		p Some content
 
-	+b.panel(id='experience')
-		+b.content
-			h2 Опыт веб-разработки
-			p Some content
+	include ../jade/home
 
-	+b.panel(id='portfolio')
-		+b.content
-			h2 Портфолио
-			p Some content
+	include ../jade/experience
 
-	+b.panel(id='shri')
-		+b.content
-			h2 Ожидания от ШРИ
-			p Some content
+	include ../jade/portfolio
+
+	include ../jade/shri
