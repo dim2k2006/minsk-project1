@@ -1,0 +1,11 @@
+.header {
+	position: absolute;
+	display: block;
+	width: 63px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #414141;
+	transition: width 400ms;
+	z-index: 2000;
+}

@@ -1,7 +1,7 @@
 .burger {
 	position: relative;
 	display: block;
-	width: 62px;
+	width: 63px;
 	height: 62px;
 	background-color: #cf1a20;
 	cursor: pointer;
@@ -20,11 +20,11 @@
 		left: 100%;
 	}
 
-	.container__input:checked ~ .container__right &__state_default {
+	.container__input:checked ~ .header &__state_default {
 		left: -100%;
 	}
 
-	.container__input:checked ~ .container__right &__state_active {
+	.container__input:checked ~ .header &__state_active {
 		left: 0;
 	}
 
