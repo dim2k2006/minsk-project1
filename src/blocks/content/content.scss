@@ -19,7 +19,10 @@
 	}
 
 	&__col_left {
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
 		background-color: #FFF;
+		background-size: cover;
 	}
 
 	&__col_left:after {
