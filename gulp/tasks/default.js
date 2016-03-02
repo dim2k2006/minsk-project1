@@ -9,6 +9,7 @@ gulp.task('default', () => (
 		'styles',
 		'images',
 		'copy',
+		'svg',
 		'connect',
 		'watch'
 	)

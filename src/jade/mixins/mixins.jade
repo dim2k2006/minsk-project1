@@ -3,3 +3,4 @@ mixin nav-link(links)
 		+e('li').item
 			+e('a').link(href= item.href, id= item.id, data-text= item.link)
 				+e('span').icon
+					+e('img').img(src='images/' + item.icon + '.svg')

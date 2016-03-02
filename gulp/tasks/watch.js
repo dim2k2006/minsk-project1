@@ -13,12 +13,8 @@ gulp.task('watch', () => {
     });
 
     watch(`${settings.baseSrc}/{pages,blocks,jade}/**/*.jade`, () => {
-        runSequence('markup', reload);
+        runSequence('markup', 'svg', reload);
     });
-
-    watch([`${settings.baseSrc}/{pages,blocks}/**/*.jade`], function(event, cb) {
-    	runSequence('markup', reload)
-  	});
 
     watch(['package.json'], function(event, cb) {
         runSequence('styles-dependencies', 'styles', 'scripts-dependencies', 'scripts', reload)
