@@ -4,3 +4,12 @@ mixin nav-link(links)
 			+e('a').link(href= item.href, id= item.id, data-text= item.link)
 				+e('span').icon
 					+e('img').img(src='images/' + item.icon + '.svg')
+
+
+
+mixin interests-list(list)
+	each item in list
+		+e('li').item
+			+e('div').wrapper
+				+e('span').text= item.title
+				+e('img').icon(src='images/' + item.icon + '.svg')

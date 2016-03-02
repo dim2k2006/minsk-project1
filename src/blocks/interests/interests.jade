@@ -1,0 +1,24 @@
++b('div').interests
+
+	+e('div').title
+		h3 Хобби и увлечения
+
+	+e('ul').list
+		+interests-list([
+			{
+				title: 'Велосипед',
+				icon: 'ico-bicycle',
+			}, 
+			{
+				title: 'Роллики',
+				icon: 'ico-rollers',
+			},
+			{
+				title: 'Литература',
+				icon: 'ico-books',
+			},
+			{
+				title: 'Кино',
+				icon: 'ico-film',
+			}
+		])
