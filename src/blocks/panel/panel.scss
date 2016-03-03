@@ -15,8 +15,16 @@
 	-moz-transition: all .8s ease-in-out;
 	-o-transition: all .8s ease-in-out;
 	transition: all .8s ease-in-out;
-}
 
-.panel:target {
-	margin-top: 0%;
+	@include respond-to('ultrahuge') {
+		padding-right: 290px;
+	}
+
+	@include respond-to('huge') {
+		padding-right: 62px;
+	}
+
+	&:target {
+		margin-top: 0%;
+	}
 }

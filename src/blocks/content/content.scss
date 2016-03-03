@@ -8,6 +8,14 @@
 		height: 100%;
 		top: 0;
 		left: 0;
+
+		@include respond-to('increasead') {
+			width: 40%;
+		}
+
+		@include respond-to('medium') {
+			width: 0;
+		}
 	}
 
 	&__col + &__col {
@@ -16,6 +24,28 @@
     	padding-left: 66px;
     	padding-right: 66px;
 		overflow-y: scroll;
+
+		@include respond-to('increasead') {
+			width: 60%;
+			left: 40%;
+		}
+
+		@include respond-to('big') {
+			padding-top: 25px;
+			padding-left: 33px;
+    		padding-right: 33px;
+		}
+
+		@include respond-to('medium') {
+			width: 100%;
+			left: 0;
+		}
+
+		@include respond-to('small') {
+			padding-top: 15px;
+			padding-left: 15px;
+    		padding-right: 15px;
+		}
 	}
 
 	&__col_left {
@@ -38,6 +68,10 @@
 
 	&__col_right {
 		padding-bottom: 50px;
+
+		@include respond-to('small') {
+			padding-bottom: 15px;
+		}
 	}
 
 	&:after {

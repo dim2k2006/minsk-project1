@@ -1,8 +1,8 @@
 /* BASE */
+@import 'base/mixins.scss';
 @import 'base/variables.scss';
 @import 'base/base.scss';
 @import 'base/fonts.scss';
-@import 'base/mixins.scss';
 
 /* GRID */
 @import '../bower_components/susy/sass/susy';

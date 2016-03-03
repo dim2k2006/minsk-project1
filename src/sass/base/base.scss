@@ -28,6 +28,16 @@ h1 {
 	line-height: $font-size-large;
 	color: $color-gray;
 	text-transform: uppercase;
+
+	@include respond-to('big') {
+		margin: .5em 0;
+	}
+
+	@include respond-to('small') {
+		margin-top: 0;
+		font-size: $font-size-large * 0.8;
+		line-height: $font-size-large * 0.9;
+	}
 }
 
 h3 {

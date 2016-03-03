@@ -34,6 +34,10 @@
 		border-bottom: 1px solid transparent;
 		overflow: hidden;
 		transition: all 400ms ease .5s;
+
+		@include respond-to('medium') {
+			display: none;
+		}
 	}
 
 	&__link:hover:before {
