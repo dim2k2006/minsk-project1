@@ -13,3 +13,18 @@ mixin interests-list(list)
 			+e('div').wrapper
 				+e('span').text= item.title
 				+e('img').icon(src='images/' + item.icon + '.svg')
+
+
+
+mixin history-list(list)
+	each item in list
+		+e('li').item
+			+e('div').col._left
+				+e('div').img
+					+e('img').icon(src='images/' + item.icon + '.svg')
+			+e('div').col._right
+				+e('div').content
+					+e('h4').title= item.title
+					+e('p').text= item.text
+
+
