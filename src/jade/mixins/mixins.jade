@@ -41,8 +41,16 @@ mixin history-list(list)
 						+e('div').img
 							+e('img').icon(src='images/' + item.icon + '.svg')
 							+e('span').year= item.year
-				
-
 		
 
+		
+mixin portfolio-list(list)
+	each item in list
+		+e('li').item
+			+e('div').wrapper
+				+b('svg').border('xmlns'='http://www.w3.org/2000/svg' width='100%' height='100%')
+					+e('line').top(x1='0' y1='0' x2='900' y2='0')
+					+e('line').left(x1='0' y1='460' x2='0' y2='-920')
+					+e('line').bottom(x1='300' y1='460' x2='-600' y2='460')
+					+e('line').right(x1='300' y1='0' x2='300' y2='1380')
 
