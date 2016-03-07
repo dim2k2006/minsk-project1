@@ -28,12 +28,14 @@ mixin history-list(list)
 							+e('img').icon(src='images/' + item.icon + '.svg')
 							+e('span').year= item.year
 				+e('div').col._right
+					+e.input(type='radio', name='historyItem', id='historyItem' + n)
 					+e('div').content
 						+e('h4').title= item.title
 						+e('p').text= item.text
 			else
 				+e('div').col._right
 					+e('div').content
+						+e.input(type='radio', name='historyItem', id= n)
 						+e('h4').title= item.title
 						+e('p').text= item.text
 				+e('div').col._left
