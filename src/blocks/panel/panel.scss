@@ -24,7 +24,11 @@
 		padding-right: 62px;
 	}
 
+	@include respond-to('medium') {
+		margin-top: -200%;
+	}
+
 	&:target {
-		margin-top: 0%;
+		margin-top: 0;
 	}
 }
