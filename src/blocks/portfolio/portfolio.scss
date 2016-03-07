@@ -13,6 +13,43 @@
 		margin-right: 20px;
 		margin-bottom: 20px;
 		background-color: #f1f1f1;
-		box-shadow: inset 0 0 0 3px #FFF;
+		box-shadow: inset 0 0 0 5px #FFF;
+	}
+
+	&__wrapper svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__wrapper svg line {
+		stroke-width: 3;
+		stroke: #bb9977;
+		fill: none;
+		transition: all .8s ease-in-out;
+	}
+
+	&__wrapper svg line {
+		stroke-dasharray: 338;
+	}
+
+	&__wrapper:hover svg line {
+		transition-delay: 0.1s;
+	}
+
+	&__wrapper:hover svg line.top {
+		transform: translateX(-676px);
+	}
+
+	&__wrapper:hover svg line.bottom {
+		transform: translateX(676px);
+	}
+
+	&__wrapper:hover svg line.left {
+		transform: translateY(676px);
+	}
+
+	&__wrapper:hover svg line.right {
+		transform: translateY(-676px);
 	}
 }
