@@ -24,23 +24,27 @@ mixin history-list(list)
 			if n % 2 == 0
 				+e('div').col._left
 					+e('div').wrapper
-						+e('div').img
+						+e('label').img(for='historyItem' + n)
 							+e('img').icon(src='images/' + item.icon + '.svg')
 							+e('span').year= item.year
 				+e('div').col._right
-					+e.input(type='radio', name='historyItem', id='historyItem' + n)
+					+e.input(type='checkbox', name='historyItem', id='historyItem' + n)
 					+e('div').content
-						+e('h4').title= item.title
-						+e('p').text= item.text
+						+e('label').close(for='historyItem' + n)
+						+e('div').inner
+							+e('h4').title= item.title
+							+e('p').text= item.text
 			else
 				+e('div').col._right
+					+e.input(type='checkbox', name='historyItem', id='historyItem' + n)
 					+e('div').content
-						+e.input(type='radio', name='historyItem', id= n)
-						+e('h4').title= item.title
-						+e('p').text= item.text
+						+e('label').close(for='historyItem' + n)
+						+e('div').inner
+							+e('h4').title= item.title
+							+e('p').text= item.text
 				+e('div').col._left
 					+e('div').wrapper
-						+e('div').img
+						+e('label').img(for='historyItem' + n)
 							+e('img').icon(src='images/' + item.icon + '.svg')
 							+e('span').year= item.year
 		
