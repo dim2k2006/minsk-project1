@@ -18,6 +18,7 @@ $color-white: #FFF;
 $breakpoints: (
 	'small' : (max-width: 480px),
 	'medium': (max-width: 640px),
+	'prebig': (max-width: 767px),
 	'big': (max-width: 800px),
 	'intermediary': (max-width: 960px),
 	'increasead': (max-width: 1040px),

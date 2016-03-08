@@ -15,7 +15,7 @@
 		vertical-align: top;
 		margin-bottom: 20px;
 
-		@include respond-to('medium') {
+		@include respond-to('prebig') {
 			width: 100%;
 		}
 	}
@@ -32,7 +32,7 @@
 		background-color: #f1f1f1;
 		box-shadow: inset 0 0 0 5px #FFF;
 
-		@include respond-to('medium') {
+		@include respond-to('prebig') {
 			width: 100%;
 			height: auto;
 			padding-top: 30px;
@@ -46,7 +46,7 @@
 		top: 0;
 		left: 0;
 
-		@include respond-to('medium') {
+		@include respond-to('prebig') {
 			display: none;
 		}
 	}
@@ -103,7 +103,7 @@
 		opacity: 0;
 		transition: all .8s ease-in-out;
 
-		@include respond-to('medium') {
+		@include respond-to('prebig') {
 			display: none;
 		}
 	}
@@ -136,7 +136,7 @@
 			max-width: 100%;
 		}
 
-		@include respond-to('medium') {
+		@include respond-to('prebig') {
 			display: none;
 		}
 	}
