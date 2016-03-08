@@ -1,17 +1,28 @@
 .portfolio {
 
+	font-size: 0;
+
 	&__list {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 	}
 
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 20px;
+	}
+
+	&__item:nth-child(odd) {
+		margin-right: 20px;
+	}
+
 	&__wrapper {
 		position: relative;
 		width: 338px;
 		height: 338px;
-		margin-right: 20px;
-		margin-bottom: 20px;
+		padding-top: 66px;
 		background-color: #f1f1f1;
 		box-shadow: inset 0 0 0 5px #FFF;
 
@@ -33,7 +44,7 @@
 
 	&__wrapper svg line {
 		stroke-width: 3;
-		stroke: #bb9977;
+		stroke: #f1f1f1;
 		fill: none;
 		transition: all .8s ease-in-out;
 	}
@@ -43,6 +54,7 @@
 	}
 
 	&__wrapper:hover svg line {
+		stroke: #bb9977;
 		transition-delay: 0.1s;
 	}
 
@@ -60,5 +72,63 @@
 
 	&__wrapper:hover svg line.right {
 		transform: translateY(-676px);
+	}
+
+	&__preview {
+		position: relative;
+		text-align: center;
+	}
+
+	&__zoom {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 40px;
+		height: 40px;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 50%;
+		margin-left: -20px;
+		background-color: red;
+		cursor: pointer;
+		opacity: 0;
+		transition: all .8s ease-in-out;
+	}
+
+	&__wrapper:hover &__zoom {
+		opacity: 1;
+	}
+
+	&__blur {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: all .8s ease-in-out;
+	}
+
+	&__wrapper:hover &__blur {
+		opacity: 1;
+	}
+
+	&__title {
+		position: relative;
+		padding-left: 30px;
+		padding-right: 30px;
+		text-align: center;
+		line-height: 26px;
+		transition: all .8s ease-in-out;
+
+		a {
+			color: $color-primary;
+			text-decoration: none;
+			transition: all .8s ease-in-out;
+		}
+	}
+
+	&__wrapper:hover &__title h3 a {
+		color: $color-brown;
 	}
 }

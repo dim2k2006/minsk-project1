@@ -51,6 +51,8 @@ mixin history-list(list)
 
 		
 mixin portfolio-list(list)
+	- var n = 1
+
 	each item in list
 		+e('li').item
 			+e('div').wrapper
@@ -59,3 +61,16 @@ mixin portfolio-list(list)
 					line.left(x1='0' y1='338' x2='0' y2='-676')
 					line.bottom(x1='338' y1='338' x2='-676' y2='338')
 					line.right(x1='338' y1='0' x2='338' y2='1014')
+
+				+e('div').preview
+					+e('div').normal
+						+e('img').img(src='images/' + item.preview + '.png')
+					+e('div').blur
+						+e('img').img(src='images/' + item.preview + '-blur.png')
+					+e('label').zoom(for='portfolioZoom' + n)
+
+				+e('div').title
+					+e('h3')
+						+e('a').link(href= item.link)= item.title
+
+				- n++

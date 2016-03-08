@@ -1,6 +1,18 @@
 +b.panel(id='portfolio')
 	+b('section').content
-		+e.col._left(style='background-image: url(images/bg-experience.jpg);')
+		+e.col._left()
+			+b('div').zoom
+				+e('input').input(type='radio', name='portfolioZoom', id='portfolioZoom1', checked)
+				+e('div').item(style='background-image: url(images/vis-portfolio-full-jeweltime.jpg);')
+
+				+e('input').input(type='radio', name='portfolioZoom', id='portfolioZoom2')
+				+e('div').item(style='background-image: url(images/vis-portfolio-full-lepshey.jpg);')
+
+				+e('input').input(type='radio', name='portfolioZoom', id='portfolioZoom3')
+				+e('div').item(style='background-image: url(images/vis-portfolio-full-okb.jpg);')
+
+				+e('input').input(type='radio', name='portfolioZoom', id='portfolioZoom4')
+				+e('div').item(style='background-image: url(images/vis-portfolio-full-battlegate.jpg);')
 		+e.col._right
 			h1 Портфолио
 
