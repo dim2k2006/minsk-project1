@@ -16,6 +16,10 @@
 		background-size: cover;
 		opacity: 0;
 		transition: all .8s ease-in-out;
+
+		@include respond-to('monsterhuge') {
+			background-position: 75% 50%;
+		}
 	}
 
 	&__input {
@@ -25,5 +29,9 @@
 
 	&__input:checked + &__item {
 		opacity: 1;
+
+		@include respond-to('prebig') {
+			opacity: 0;
+		}
 	}
 }
