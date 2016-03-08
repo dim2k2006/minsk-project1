@@ -4,14 +4,10 @@
 	position: relative;
 	min-width: 320px;
 	height: 100%;
-	padding-right: 62px;
+	padding-right: 330px;
 	overflow: hidden;
 
-	@include respond-to('ultrahuge') {
-		padding-right: 290px;
-	}
-
-	@include respond-to('huge') {
+	@include respond-to('monsterhuge') {
 		padding-right: 62px;
 	}
 

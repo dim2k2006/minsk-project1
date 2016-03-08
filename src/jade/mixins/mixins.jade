@@ -71,6 +71,6 @@ mixin portfolio-list(list)
 
 				+e('div').title
 					+e('h3')
-						+e('a').link(href= item.link)= item.title
+						+e('a').link(href= item.link, target='_blank')= item.title
 
 				- n++
