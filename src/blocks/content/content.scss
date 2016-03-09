@@ -74,8 +74,12 @@
 		background-color: #383838;
 	}
 
+	#shri &__col_left:after {
+		background-color: #383838;
+	}
+
 	&__col_right {
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 
 		@include respond-to('small') {
 			padding-bottom: 15px;

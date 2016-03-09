@@ -1,0 +1,10 @@
+.copyRight {
+	position: relative;
+	padding-top: 60px;
+
+	&__text {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: $font-size-small;
+	}
+}
