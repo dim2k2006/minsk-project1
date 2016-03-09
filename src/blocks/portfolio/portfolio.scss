@@ -22,6 +22,10 @@
 
 	&__item:nth-child(odd) {
 		margin-right: 20px;
+
+		@include respond-to('prebig') {
+			margin-right: 0;
+		}
 	}
 
 	&__wrapper {
