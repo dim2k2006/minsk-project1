@@ -36,13 +36,13 @@ h1 {
 	@include respond-to('small') {
 		margin-top: 0;
 		font-size: $font-size-large * 0.8;
-		line-height: $font-size-large * 0.9;
+		line-height: $font-size-large * 1;
 	}
 }
 
 h3 {
 	font-weight: 400;
 	font-size: $font-size-medium;
-	line-height: $font-size-medium;
+	line-height: $font-size-medium * 1.4;
 	color: $color-secondary;
 }
