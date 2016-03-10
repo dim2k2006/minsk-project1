@@ -5,7 +5,7 @@
 
 3. npm i && bower i
 
-4. gulp
+4. gulp build
 
 
 
